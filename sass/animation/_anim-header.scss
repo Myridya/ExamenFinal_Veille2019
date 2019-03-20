@@ -1,0 +1,82 @@
+   
+
+
+@keyframes anim1 {
+    from {
+        transform: translateY(-100vh)  rotateX(0deg);
+         animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+    }
+ 
+    100% {
+        transform: translateY(0) rotateX(0deg); 
+        // animation-timing-function: cubic-bezier(.89, .17, 1, .31);
+    }
+}
+
+@keyframes anim2 {
+
+   0% {
+        transform: rotateX(50deg); 
+        animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+    }
+    60% {
+        transform:  rotateX(-40deg);
+    }
+
+    70% {
+        transform: rotateX(30deg);
+    }
+
+    80% {
+        transform: rotateX(-20deg);
+    }
+    90% {
+        transform:  rotateX(10deg);
+    }
+    95% {
+            transform: rotateX(-5deg);
+    }
+
+    97% {
+            transform:  rotateX(3deg);
+        }
+    99% {
+            transform:  rotateX(-2deg);
+        }
+
+    100% {
+        transform:  rotateX(0deg);
+    }
+} 
+
+
+
+@keyframes anim3 {
+    0% {
+        animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+        transform: translateX(-100%) rotateX(50deg);
+    }
+
+    100% {
+        transform: translateX(0) rotateX(50deg);
+    }
+}
+
+.site-header.featured-image {
+    perspective: 500px;
+}
+
+.anim1 {
+    transform-origin: top center;
+    animation: anim1 2s, anim2 1s 2s  ;
+
+    animation-fill-mode: forwards;
+    
+}
+
+.anim3 {
+    // animation-fill-mode: forwards;
+    transform-origin: top center;
+    animation: anim3 1s forwards, anim2 1s 1s forwards;
+    animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+}
