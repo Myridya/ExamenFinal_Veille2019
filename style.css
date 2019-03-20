@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- Theme Name:   Twenty nineteen Enfant
+ Theme Name:   Twenty nineteen Carolanne Legault
  Theme URI:    http://referenced.ca
  Description:  Twenty nineteen enfant Theme
  Author:       Eddy Martin
@@ -10,7 +10,7 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-nineteen-enfant
+ Text Domain:  twenty-nineteen-legaultCarolanne
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -621,7 +621,6 @@ body.page .main-navigation {
   font-size: 8vw;
   -webkit-transform: translateY(-50vh);
           transform: translateY(-50vh);
-  width: 5em;
   padding: 4px;
 }
 
@@ -779,8 +778,24 @@ body.page .main-navigation {
   font-size: .4em;
 }
 
+.liste-cours .wp-block-media-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+}
+
 .entry .entry-content .has-large-font-size {
-  font-size: 1em;
+  font-size: 1.2em;
+}
+
+.site {
+  background-color: #8cbeff;
+}
+
+.monbac {
+  background-color: #6babff;
+  color: #001d42;
 }
 
 @-webkit-keyframes anim1 {

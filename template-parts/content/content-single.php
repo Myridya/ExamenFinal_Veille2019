@@ -10,7 +10,7 @@
  */
 
 ?>
--------------------- SINGLE NOUVELLE -------------------
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 	<header class="entry-header">
@@ -18,23 +18,30 @@
 	</header>
 	<?php endif; ?>
 
-	<div class="entry-content manouvelle">
-		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
-			<figure class="wp-block-media-text__media">
-			<?php
-				$image = get_field('mon_image');
-				$size = 'full'; // (thumbnail, medium, large, full or custom size)
-				if( $image ) {
-					echo wp_get_attachment_image( $image, $size);
-				}
-			?>
-			</figure>
-			<div class="wp-block-media-text__content">
-				<?php
-					the_content();
-				?>
-			</div>
-		</div>
+	<div class="entry-content">
+		<?php
+		the_content(
+			sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentynineteen' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			)
+		);
+
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
+				'after'  => '</div>',
+			)
+		);
+		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

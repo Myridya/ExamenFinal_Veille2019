@@ -15,7 +15,6 @@
         font-size: 8vw;
         transform : translateY(-50vh);
        // border : 1px solid #aaa;
-        width : 5em;
        // background-color: #ddd;
         padding: 4px;
         
@@ -44,8 +43,6 @@
         display: flex;
         justify-content: center;
     }
-
-
 
     @include media(tablet)
     {
