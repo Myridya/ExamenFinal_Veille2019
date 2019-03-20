@@ -23,9 +23,9 @@
 			<figure class="wp-block-media-text__media">
 			<?php
 				$image = get_field('mon_image');
-				$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+				$size = 'full'; // (thumbnail, medium, large, full or custom size)
 				if( $image ) {
-					echo wp_get_attachment_image( $image, $size );
+					echo wp_get_attachment_image( $image, $size);
 				}
 			?>
 			</figure>
