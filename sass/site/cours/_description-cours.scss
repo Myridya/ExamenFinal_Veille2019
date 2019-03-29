@@ -1,9 +1,26 @@
+.entry-content > p{
+    text-align: justify;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .wp-caption{
     display: flex;
     border: 4px solid rgb(0, 61, 141);
     color:rgb(0, 29, 66);
     background-color: rgba(107, 171, 255, 75%);
 }
+
+.entry-title{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.entry-title:hover{
+    text-decoration: none;
+    color: rgb(52, 151, 238);
+}
+
 
 .wp-caption-title{
     text-decoration: underline;
@@ -35,4 +52,8 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+}
+
+.descriptionCours{
+    font-family: Arial, Helvetica, sans-serif;
 }

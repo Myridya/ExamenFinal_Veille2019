@@ -54,7 +54,7 @@
 					$duree = get_field('duree');
 				}
 			?>
-		<p>
+		<p class='duree'>
 			Durée:
 			<?php
 				the_field('duree');
@@ -62,9 +62,9 @@
 			 hrs
 		</p>
 
-		</div>
+		
 
-		<p>
+		<p class='prof'>
 			Professeur(s):
 			<?php
 				the_field('professeurs');
@@ -125,6 +125,7 @@ affiche_projet('projet_developpe_3');
 ?>
 
 		</div>
+	</div>
 		
 			
 	</div><!-- .entry-content -->
