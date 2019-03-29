@@ -61,6 +61,9 @@ A quoi peut servir la directive @content ?
 http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-thing
 */
 /* Navigation */
+/*--------------------------------------------------------------
+## navigation
+--------------------------------------------------------------*/
 /** === Main menu === */
 .main-navigation {
   display: block;
@@ -596,6 +599,11 @@ body.page .main-navigation {
   }
 }
 
+.menu-item:hover {
+  font-size: 1.3em;
+  color: #6babff;
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -797,6 +805,11 @@ body.page .main-navigation {
 .wp-caption-title {
   text-decoration: underline;
   font-size: 1em;
+}
+
+.wp-caption-title:hover {
+  font-size: 1.2em;
+  color: #2c73cf;
 }
 
 .wp-caption-desc {
