@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- Theme Name:   Twenty nineteen Carolanne Legault
+ Theme Name:   Twenty nineteen Travail Pratique 2
  Theme URI:    http://referenced.ca
  Description:  Twenty nineteen enfant Theme
  Author:       Eddy Martin
@@ -10,7 +10,7 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-nineteen-legaultCarolanne
+ Text Domain:  twenty-nineteen-TravailPratique2       
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -659,14 +659,6 @@ body.page .main-navigation {
           justify-content: center;
 }
 
-.main-navigation > div{
-  font-size: 1.5em;
-}
-
-.main-navigation .main-menuS > li{
-  border: 1px solid white;
-}
-
 @media only screen and (min-width: 768px) {
   .site-header.featured-image .site-branding {
     min-width: 78vw;
@@ -791,6 +783,26 @@ body.page .main-navigation {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid black;
+}
+
+.wp-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #001d42;
+  background-color: #6babff;
+  padding: 5px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
 }
 
 .entry .entry-content .has-large-font-size {

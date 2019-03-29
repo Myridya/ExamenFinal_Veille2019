@@ -97,16 +97,19 @@ if( !empty($image) ):
 		<div class="wp-caption">
 
 	<?php endif; ?>
-	<p>Titre: <?php echo $title; ?></p>
+
 	<a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
-		
 		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-		
 	</a>
-	<p>Description: <?php echo $description; ?></p>
+
+	<div class="info">
+		<p class="wp-caption-title">Titre: <?php echo $title; ?></p>
+
+		<p class="wp-caption-desc">Description: <?php echo $description; ?></p>
+	</div>
+	
 	<?php if( $caption ): ?>
 
-			<p class="wp-caption-text"><?php echo $caption; ?></p>
 
 		</div>
 
