@@ -65,7 +65,7 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 .main-navigation {
   display: block;
   margin-top: 0.25rem;
-  font-size: .8em;
+  font-size: 1.2em;
   /* Un-style buttons */
   /*
 	 * Sub-menu styles
