@@ -794,12 +794,22 @@ body.page .main-navigation {
   background-color: #6babff;
 }
 
+.wp-caption-title {
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.wp-caption-desc {
+  font-size: 0.8em;
+}
+
 .imgCaption {
   margin-top: 15px;
   margin-left: 15px;
 }
 
 .info {
+  font-family: Arial, Helvetica, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

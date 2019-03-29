@@ -5,12 +5,22 @@
     background-color: rgba(107, 171, 255, 75%);
 }
 
+.wp-caption-title{
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.wp-caption-desc{
+    font-size: 0.8em;
+}
+
 .imgCaption{
     margin-top:15px;
     margin-left: 15px;
 }
 
 .info{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
