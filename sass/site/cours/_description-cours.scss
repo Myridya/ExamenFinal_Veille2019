@@ -1,8 +1,13 @@
 .wp-caption{
     display: flex;
+    border: 4px solid rgb(0, 61, 141);
     color:rgb(0, 29, 66);
-    background-color: rgb(107, 171, 255);
-    padding: 5px;
+    background-color: rgba(107, 171, 255, 75%);
+}
+
+.imgCaption{
+    margin-top:15px;
+    margin-left: 15px;
 }
 
 .info{

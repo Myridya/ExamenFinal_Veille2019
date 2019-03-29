@@ -99,7 +99,7 @@ if( !empty($image) ):
 	<?php endif; ?>
 
 	<a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
-		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+		<img class="imgCaption" src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 	</a>
 
 	<div class="info">

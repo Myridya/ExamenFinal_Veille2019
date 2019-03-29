@@ -789,9 +789,14 @@ body.page .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 4px solid #003d8d;
   color: #001d42;
   background-color: #6babff;
-  padding: 5px;
+}
+
+.imgCaption {
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .info {
