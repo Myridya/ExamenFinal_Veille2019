@@ -12,11 +12,17 @@
 
 .wp-caption-desc{
     font-size: 0.8em;
+    font-style: italic;
+    color: aliceblue;
 }
 
 .imgCaption{
     margin-top:15px;
     margin-left: 15px;
+}
+
+.imgCaption:hover{
+    border: 2px solid  rgb(0, 61, 141);
 }
 
 .info{
