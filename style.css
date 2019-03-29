@@ -659,6 +659,14 @@ body.page .main-navigation {
           justify-content: center;
 }
 
+.main-navigation > div{
+  font-size: 1.5em;
+}
+
+.main-navigation > li{
+  border: 1px solid white;
+}
+
 @media only screen and (min-width: 768px) {
   .site-header.featured-image .site-branding {
     min-width: 78vw;
