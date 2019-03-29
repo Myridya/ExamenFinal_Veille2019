@@ -46,12 +46,32 @@
 		?>
 
 			<?php
-				$image = get_field('projets_developpes');
-				$size = 'full'; // (thumbnail, medium, large, full or custom size)
-				if( $image ) {
-					echo wp_get_attachment_image( $image, $size);
+				if (get_field('professeurs')){
+					$prof = get_field('professeurs');
+				}
+				
+				if (get_field('duree')){
+					$duree = get_field('duree');
+				}
+
+				if(get_field('projets_developpes')){
+					$image = get_field('projets_developpes');
 				}
 			?>
+		<p>
+			
+			<?php
+				the_field('duree');
+			?>
+		</p>
+
+		<p>
+			
+			<?php
+				the_field('professeurs');
+			?>
+		</p>
+			
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
