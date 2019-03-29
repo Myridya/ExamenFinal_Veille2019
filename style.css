@@ -663,7 +663,7 @@ body.page .main-navigation {
   font-size: 1.5em;
 }
 
-.main-navigation > li{
+.main-navigation .main-menuS > li{
   border: 1px solid white;
 }
 
