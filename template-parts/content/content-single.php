@@ -44,7 +44,7 @@
 			)
 		);
 		?>
-
+			<div class='descriptionCours'>
 			<?php
 				if (get_field('professeurs')){
 					$prof = get_field('professeurs');
@@ -53,24 +53,76 @@
 				if (get_field('duree')){
 					$duree = get_field('duree');
 				}
-
-				if(get_field('projets_developpes')){
-					$image = get_field('projets_developpes');
-				}
 			?>
 		<p>
-			
+			Durée:
 			<?php
 				the_field('duree');
 			?>
+			 hrs
 		</p>
 
+		</div>
+
 		<p>
-			
+			Professeur(s):
 			<?php
 				the_field('professeurs');
 			?>
 		</p>
+
+		<div class='imgProjets'>
+		<?php
+function affiche_projet($nomProjet)
+{
+$image = get_field($nomProjet);
+
+if( !empty($image) ): 
+
+	// vars
+	$url = $image['url'];
+	$title = $image['title'];
+	$alt = $image['alt'];
+	$caption = $image['caption'];
+	$description = $image['description'];
+
+	// thumbnail
+	$size = 'thumbnail';
+	$thumb = $image['sizes'][ $size ];
+	$width = $image['sizes'][ $size . '-width' ];
+	$height = $image['sizes'][ $size . '-height' ];
+
+	if( $caption ): ?>
+
+		<div class="wp-caption">
+
+	<?php endif; ?>
+	<p>Titre: <?php echo $title; ?></p>
+	<a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
+		
+		<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+		
+	</a>
+	<p>Description: <?php echo $description; ?></p>
+	<?php if( $caption ): ?>
+
+			<p class="wp-caption-text"><?php echo $caption; ?></p>
+
+		</div>
+
+	<?php endif; ?>
+
+<?php endif; 
+}
+affiche_projet('projet_developpe_1');
+affiche_projet('projet_developpe_2');
+affiche_projet('projet_developpe_3');
+
+
+?>
+
+		</div>
+		
 			
 	</div><!-- .entry-content -->
 
