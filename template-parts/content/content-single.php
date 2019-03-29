@@ -17,6 +17,7 @@
 		<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 	</header>
 	<?php endif; ?>
+			
 
 	<div class="entry-content">
 		<?php
@@ -35,7 +36,7 @@
 				
 			)
 		);
-
+		
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
@@ -43,6 +44,14 @@
 			)
 		);
 		?>
+
+			<?php
+				$image = get_field('projets_developpes');
+				$size = 'full'; // (thumbnail, medium, large, full or custom size)
+				if( $image ) {
+					echo wp_get_attachment_image( $image, $size);
+				}
+			?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
